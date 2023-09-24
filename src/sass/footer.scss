@@ -1,0 +1,51 @@
+.footer {
+    font-family: $mainFont;
+    background: $footerBg;
+    height: 250px;
+    padding: 20px;
+}
+
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". .";
+}
+
+.logo {
+    font-size: xx-large;
+    padding-top: 8%;
+    color: $blackFont;
+
+    &:nth-last-child(even) {
+        border-right: solid 1px rgba(0, 0, 0, 0.164);
+    }
+}
+
+.contacts {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    list-style: none;
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style: none;
+        margin-bottom: 20px;
+
+        &__item {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+
+    &__year {
+        font-size: larger;
+        font-weight: 700
+    }
+}

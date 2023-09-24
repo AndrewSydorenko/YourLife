@@ -1,0 +1,15 @@
+.burger-list {
+    font-family: $mainFont;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__item {
+        list-style: none;
+
+    }
+
+    &__link {
+        color: $whiteColor;
+    }
+}

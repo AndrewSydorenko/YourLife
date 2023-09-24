@@ -1,0 +1,39 @@
+.health-gallery-item {
+    width: 300px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+    @include for-size(tablet) {
+        width: 250px;
+    }
+
+    @include for-size(desktop) {
+        width: 200px;
+    }
+
+    &__image {
+        object-fit: cover;
+        overflow: hidden;
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: $mainShadow;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    }
+
+    &__title {
+        font-size: small;
+    }
+
+    &__description {
+        font-size: x-small;
+    }
+}

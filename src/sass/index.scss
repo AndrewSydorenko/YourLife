@@ -1,0 +1,17 @@
+@import '~modern-normalize/modern-normalize.css';
+
+@import './utils/variables';
+@import './utils/mixins';
+@import './base/button.scss';
+@import './base/titile.scss';
+@import './base/reset';
+@import './base/common';
+@import './base/searchBar';
+@import './base/burger';
+@import './mainPage';
+@import './healthPage';
+@import './footer';
+@import './header';
+@import './articleItem';
+@import './articleList';
+@import './foodList';

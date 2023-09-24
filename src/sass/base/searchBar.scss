@@ -1,0 +1,24 @@
+.search__wrapper {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: large;
+    display: flex;
+    gap: 5px;
+    box-shadow: $mainShadow;
+}
+
+.search__field {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &::placeholder {
+        opacity: 0.5;
+    }
+
+}
+
+.search__btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}

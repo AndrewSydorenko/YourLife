@@ -1,0 +1,53 @@
+.food-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    margin-bottom: 100px;
+
+    @include for-size(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+
+    &__item {
+        position: relative;
+    }
+
+    &__image {
+        margin: 0;
+        object-fit: cover;
+        overflow: hidden;
+        box-sizing: border-box;
+        box-shadow: $mainShadow;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+
+
+        @include for-size(desktop) {
+            bottom: 55px;
+            left: 50px;
+        }
+
+
+        color: $whiteColor;
+    }
+}

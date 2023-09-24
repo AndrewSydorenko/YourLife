@@ -1,0 +1,60 @@
+.health-card {
+    font-family: $mainFont;
+    max-width: 1200px;
+    background-color: $cardBg;
+    display: flex;
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    padding: 50px;
+    box-shadow: $mainShadow;
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: xx-large;
+    }
+}
+
+.card-description {
+    font-size: x-large;
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-title {
+    font-size: larger;
+}
+
+.reasons-list {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.reason-item {
+    justify-content: flex-start;
+}
+
+img {
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.call-to-action {
+    font-size: larger;
+}
