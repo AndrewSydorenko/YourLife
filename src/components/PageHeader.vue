@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <RouterLink to="/">
+        <RouterLink to="/yourlife">
             <h1 class="header-title">ТВІЙLIFE.</h1>
         </RouterLink>
 <div class="nav-bar">
